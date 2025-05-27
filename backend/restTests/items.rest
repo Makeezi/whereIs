@@ -1,0 +1,39 @@
+### Register or login device
+POST http://localhost:3000/registerLogin
+Content-Type: application/json
+
+{
+  "id": "test-device-123"
+}
+
+###
+
+### Register or login device
+POST http://localhost:3000/registerLogin
+Content-Type: application/json
+
+{
+  "id": "test-device-125"
+}
+
+###
+
+
+### Add a new item (replace TOKEN below)
+POST http://localhost:3000/items
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpY2VJZCI6ImE2ODk2MjcwYTYyYjc1ZWFhNjNiYTQ3MjRjMjM2YWRjMzY2YmQ3NzRkNTNhMjUyNDM3ZDA3NTljYTMxNDA1OGIiLCJpYXQiOjE3NDgxMzk1NjcsImV4cCI6MTc0ODc0NDM2N30.sMftMzlMW9sQ8N1MJ7ydcgZUBjFzCnlrzA3nrYSu8kE
+
+{
+  "name": "Test Item5",
+  "description": "A test description",
+  "latitude": 12.34567,
+  "longitude": 76.54321
+}
+
+###
+
+### Get all items (replace TOKEN below)
+GET http://localhost:3000/items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXZpY2VJZCI6ImE2ODk2MjcwYTYyYjc1ZWFhNjNiYTQ3MjRjMjM2YWRjMzY2YmQ3NzRkNTNhMjUyNDM3ZDA3NTljYTMxNDA1OGIiLCJpYXQiOjE3NDgxMzk1NjcsImV4cCI6MTc0ODc0NDM2N30.sMftMzlMW9sQ8N1MJ7ydcgZUBjFzCnlrzA3nrYSu8kE
+###
